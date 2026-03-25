@@ -6,3 +6,5 @@ def catch_packet(packet):
 
 print("Starting packet sniffer...")
 sniff(prn=catch_packet, filter="tcp port 8080", store=0)
+
+# Run with: "sudo $(which python) sniffer.py"
